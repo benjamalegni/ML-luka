@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Large datasets and raw files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.ova
+reddit_comments.json
+EuroSAT_TP/
+EuroSAT/
+data/raw/
+
+# Large model weights (use Git LFS or external storage for models > 100MB)
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.bin
