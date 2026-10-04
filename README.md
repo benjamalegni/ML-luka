@@ -51,7 +51,7 @@ ML-luka/
 
 ### 1. 🛰️ Clasificación de Imágenes Satelitales (EuroSAT Sentinel-2)
 - **Directorio:** [`02-deep-learning/01-tpe-eurosat-satelital/`](02-deep-learning/01-tpe-eurosat-satelital/)
-- **Notebook:** [`TPE_Redes_Neuronales_EuroSAT_Sentinel2.ipynb`](02-deep-learning/01-tpe-eurosat-satelital/TPE_Redes_Neuronales_EuroSAT_Sentinel2.ipynb)
+- **Notebook:** [`TPE_Redes_Neuronales_EuroSAT_Sentinel2.ipynb`](02-deep-learning/01-tpe-eurosat-satelital/TPE_Redes_Neuronales_EuroSAT_Sentinel2.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/02-deep-learning/01-tpe-eurosat-satelital/TPE_Redes_Neuronales_EuroSAT_Sentinel2.ipynb)
 - **Problema:** Clasificación multiclase de 10 tipos de cobertura terrestre (LULC) sobre imágenes satelitales multiespectrales Sentinel-2 (European Space Agency).
 - **Arquitecturas implementadas y comparadas:**
   1. **CNN Propia (Baseline):** Bloques convolucionales secuenciales con normalización por lotes (`BatchNormalization`) y `Dropout`.
@@ -63,7 +63,7 @@ ML-luka/
 
 ### 2. 🏥 Predicción de Costos de Seguros Médicos (Regresión y Ensamble)
 - **Directorio:** [`01-machine-learning/01-regresion-seguros-medicos/`](01-machine-learning/01-regresion-seguros-medicos/)
-- **Notebook:** [`TP_Seguros_Medicos_Regresion.ipynb`](01-machine-learning/01-regresion-seguros-medicos/TP_Seguros_Medicos_Regresion.ipynb)
+- **Notebook:** [`TP_Seguros_Medicos_Regresion.ipynb`](01-machine-learning/01-regresion-seguros-medicos/TP_Seguros_Medicos_Regresion.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/01-machine-learning/01-regresion-seguros-medicos/TP_Seguros_Medicos_Regresion.ipynb)
 - **Problema:** Predecir con alta precisión los costos facturados a pacientes en base a variables demográficas y de salud (edad, IMC, tabaquismo, cargas familiares, región).
 - **Metodología:**
   - Análisis exploratorio de datos (EDA), correlaciones y detección de patrones de no-linealidad.
@@ -76,7 +76,7 @@ ML-luka/
 
 ### 3. 🐧 Clasificación Multiclase: Palmer Penguins
 - **Directorio:** [`01-machine-learning/02-clasificacion-palmer-penguins/`](01-machine-learning/02-clasificacion-palmer-penguins/)
-- **Notebook:** [`TP_Palmer_Penguins_Clasificacion.ipynb`](01-machine-learning/02-clasificacion-palmer-penguins/TP_Palmer_Penguins_Clasificacion.ipynb)
+- **Notebook:** [`TP_Palmer_Penguins_Clasificacion.ipynb`](01-machine-learning/02-clasificacion-palmer-penguins/TP_Palmer_Penguins_Clasificacion.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/01-machine-learning/02-clasificacion-palmer-penguins/TP_Palmer_Penguins_Clasificacion.ipynb)
 - **Enfoque:** Pipeline modular de Scikit-Learn que realiza imputación diferenciada (`SimpleImputer` con mediana para variables biométricas y moda para sexo), escalado estándar, One-Hot Encoding y validación estratificada (`StratifiedKFold`).
 
 ---
@@ -84,9 +84,9 @@ ML-luka/
 ### 4. 🔤 Procesamiento de Lenguaje Natural y Redes Recurrentes
 - **Directorio:** [`03-nlp-procesamiento-texto/`](03-nlp-procesamiento-texto/)
 - **Notebooks:**
-  - [`Lenguaje_Natural_RNN_y_Bidireccional.ipynb`](03-nlp-procesamiento-texto/01-redes-recurrentes-rnn/Lenguaje_Natural_RNN_y_Bidireccional.ipynb): Demostración empírica del desvanecimiento del gradiente (*vanishing gradient*) en RNNs simples y resolución con **RNNs Bidireccionales, LSTMs y GRUs**.
-  - [`NLP_Formato_de_Datos_y_Preprocesamiento.ipynb`](03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/NLP_Formato_de_Datos_y_Preprocesamiento.ipynb): Pipelines de preprocesamiento, análisis de frecuencias, limpieza léxica y vectorización.
-  - [`DUIA_NLP_Clasificacion_Hate_Speech.ipynb`](03-nlp-procesamiento-texto/03-clasificacion-hate-speech/DUIA_NLP_Clasificacion_Hate_Speech.ipynb): Clasificación binaria de comentarios tóxicos (*hate speech*) extraídos de redes sociales.
+  - [`Lenguaje_Natural_RNN_y_Bidireccional.ipynb`](03-nlp-procesamiento-texto/01-redes-recurrentes-rnn/Lenguaje_Natural_RNN_y_Bidireccional.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/01-redes-recurrentes-rnn/Lenguaje_Natural_RNN_y_Bidireccional.ipynb): Demostración empírica del desvanecimiento del gradiente (*vanishing gradient*) en RNNs simples y resolución con **RNNs Bidireccionales, LSTMs y GRUs**.
+  - [`NLP_Formato_de_Datos_y_Preprocesamiento.ipynb`](03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/NLP_Formato_de_Datos_y_Preprocesamiento.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/NLP_Formato_de_Datos_y_Preprocesamiento.ipynb): Pipelines de preprocesamiento, análisis de frecuencias, limpieza léxica y vectorización.
+  - [`DUIA_NLP_Clasificacion_Hate_Speech.ipynb`](03-nlp-procesamiento-texto/03-clasificacion-hate-speech/DUIA_NLP_Clasificacion_Hate_Speech.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/03-clasificacion-hate-speech/DUIA_NLP_Clasificacion_Hate_Speech.ipynb): Clasificación binaria de comentarios tóxicos (*hate speech*) extraídos de redes sociales.
 
 ---
 
@@ -102,8 +102,8 @@ ML-luka/
 
 | Certificación | Emisor | Fecha | Verificación Oficial | Evaluación Práctica |
 | :--- | :---: | :---: | :---: | :---: |
-| **Fundamentals of Deep Learning** | NVIDIA DLI | Ago 2026 | [wbIctS24TAapK3aGhg75gg](https://learn.nvidia.com/certificates?id=wbIctS24TAapK3aGhg75gg) | [`01_Fundamentals_of_Deep_Learning_Assessment.ipynb`](05-certificaciones-nvidia-dli/assessments/01_Fundamentals_of_Deep_Learning_Assessment.ipynb) |
-| **Building Transformer-Based NLP Applications** | NVIDIA DLI | Ago 2026 | [vywAGFnxQJWhHIJ5mK33YQ](https://learn.nvidia.com/certificates?id=vywAGFnxQJWhHIJ5mK33YQ) | [`02_Transformers_Authorship_Attribution_NeMo_BERT.ipynb`](05-certificaciones-nvidia-dli/assessments/02_Transformers_Authorship_Attribution_NeMo_BERT.ipynb) |
+| **Fundamentals of Deep Learning** | NVIDIA DLI | Ago 2026 | [wbIctS24TAapK3aGhg75gg](https://learn.nvidia.com/certificates?id=wbIctS24TAapK3aGhg75gg) | [`01_Fundamentals_of_Deep_Learning_Assessment.ipynb`](05-certificaciones-nvidia-dli/assessments/01_Fundamentals_of_Deep_Learning_Assessment.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/05-certificaciones-nvidia-dli/assessments/01_Fundamentals_of_Deep_Learning_Assessment.ipynb) |
+| **Building Transformer-Based NLP Applications** | NVIDIA DLI | Ago 2026 | [vywAGFnxQJWhHIJ5mK33YQ](https://learn.nvidia.com/certificates?id=vywAGFnxQJWhHIJ5mK33YQ) | [`02_Transformers_Authorship_Attribution_NeMo_BERT.ipynb`](05-certificaciones-nvidia-dli/assessments/02_Transformers_Authorship_Attribution_NeMo_BERT.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/05-certificaciones-nvidia-dli/assessments/02_Transformers_Authorship_Attribution_NeMo_BERT.ipynb) |
 
 *Los certificados completos en formato PDF se encuentran en [`05-certificaciones-nvidia-dli/certificados/`](05-certificaciones-nvidia-dli/certificados/).*
 
