@@ -24,14 +24,15 @@ Abarca desde fundamentos estadísticos y algoritmos clásicos de Machine Learnin
 ML-luka/
 ├── 01-machine-learning/                    # Aprendizaje estadístico clásico y ensambles
 │   ├── 01-regresion-seguros-medicos/       # TP Final ML: Regresión, Regularización y Random Forest
-│   └── 02-clasificacion-palmer-penguins/   # Clasificación multiclase con Scikit-Learn pipelines
+│   └── 02-clasificacion-palmer-penguins/   # Clasificación multiclase, EDA y Scikit-Learn pipelines
 ├── 02-deep-learning/                       # Redes neuronales convolucionales y arquitecturas profundas
 │   ├── 01-tpe-eurosat-satelital/           # TPE: Clasificación satelital EuroSAT (CNN, Skip-ResNet, ResNet-50)
 │   └── labs-fundamentos/                   # Gradient descent, redes densas (MLP) y CNN vs Dense (MNIST)
 ├── 03-nlp-procesamiento-texto/             # Modelos secuenciales y minería de texto
 │   ├── 01-redes-recurrentes-rnn/           # Modelado temporal (RNNs, LSTMs bidireccionales, vanishing gradient)
-│   ├── 02-formato-y-preprocesamiento/      # Pipelines de ingesta, tokenización, BoW, TF-IDF
-│   └── 03-clasificacion-hate-speech/       # Detección de discurso de odio en medios sociales
+│   ├── 02-formato-y-preprocesamiento/      # Preprocesamiento léxico, regex, lematización, BoW y TF-IDF
+│   ├── 03-clasificacion-hate-speech/       # Detección de discurso de odio en medios sociales
+│   └── 04-analisis-sintactico-semantico/   # Parsing sintáctico (spaCy/NLTK), WSD y semántica léxica
 ├── 04-algoritmos-geneticos/                # Optimización combinatoria heurística (Problema de la Mochila)
 ├── 05-certificaciones-nvidia-dli/          # Certificados oficiales NVIDIA DLI y notebooks de evaluación
 │   ├── certificados/                       # Certificados en PDF verificables
@@ -74,27 +75,32 @@ ML-luka/
 
 ---
 
-### 3. 🐧 Clasificación Multiclase: Palmer Penguins
+### 3. 🐧 Clasificación Multiclase & EDA: Palmer Penguins
 - **Directorio:** [`01-machine-learning/02-clasificacion-palmer-penguins/`](01-machine-learning/02-clasificacion-palmer-penguins/)
-- **Notebook:** [`TP_Palmer_Penguins_Clasificacion.ipynb`](01-machine-learning/02-clasificacion-palmer-penguins/TP_Palmer_Penguins_Clasificacion.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/01-machine-learning/02-clasificacion-palmer-penguins/TP_Palmer_Penguins_Clasificacion.ipynb)
-- **Enfoque:** Pipeline modular de Scikit-Learn que realiza imputación diferenciada (`SimpleImputer` con mediana para variables biométricas y moda para sexo), escalado estándar, One-Hot Encoding y validación estratificada (`StratifiedKFold`).
+- **Notebooks:**
+  - [`TP_2a_Preprocesamiento_Datos_EDA.ipynb`](01-machine-learning/02-clasificacion-palmer-penguins/TP_2a_Preprocesamiento_Datos_EDA.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/01-machine-learning/02-clasificacion-palmer-penguins/TP_2a_Preprocesamiento_Datos_EDA.ipynb): Análisis exploratorio (EDA) con `ydata-profiling`, pairplots con Seaborn, estrategias de imputación y pipelines iniciales.
+  - [`TP_Palmer_Penguins_Clasificacion.ipynb`](01-machine-learning/02-clasificacion-palmer-penguins/TP_Palmer_Penguins_Clasificacion.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/01-machine-learning/02-clasificacion-palmer-penguins/TP_Palmer_Penguins_Clasificacion.ipynb): Pipeline modular de Scikit-Learn que realiza imputación diferenciada (`SimpleImputer` con mediana para variables biométricas y moda para sexo), escalado estándar, One-Hot Encoding y validación estratificada (`StratifiedKFold`).
 
 ---
 
-### 4. 🔤 Procesamiento de Lenguaje Natural y Redes Recurrentes
+### 4. 🔤 Procesamiento de Lenguaje Natural (NLP Completo)
 - **Directorio:** [`03-nlp-procesamiento-texto/`](03-nlp-procesamiento-texto/)
-- **Notebooks:**
-  - [`Lenguaje_Natural_RNN_y_Bidireccional.ipynb`](03-nlp-procesamiento-texto/01-redes-recurrentes-rnn/Lenguaje_Natural_RNN_y_Bidireccional.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/01-redes-recurrentes-rnn/Lenguaje_Natural_RNN_y_Bidireccional.ipynb): Demostración empírica del desvanecimiento del gradiente (*vanishing gradient*) en RNNs simples y resolución con **RNNs Bidireccionales, LSTMs y GRUs**.
-  - [`NLP_Formato_de_Datos_y_Preprocesamiento.ipynb`](03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/NLP_Formato_de_Datos_y_Preprocesamiento.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/NLP_Formato_de_Datos_y_Preprocesamiento.ipynb): Pipelines de preprocesamiento, análisis de frecuencias, limpieza léxica y vectorización.
-  - [`DUIA_NLP_Clasificacion_Hate_Speech.ipynb`](03-nlp-procesamiento-texto/03-clasificacion-hate-speech/DUIA_NLP_Clasificacion_Hate_Speech.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/03-clasificacion-hate-speech/DUIA_NLP_Clasificacion_Hate_Speech.ipynb): Clasificación binaria de comentarios tóxicos (*hate speech*) extraídos de redes sociales.
+- **Notebooks de la Serie:**
+  - **Preprocesamiento Léxico & Limpieza:** [`02_NLP_Preprocesamiento_y_Analisis_Lexico.ipynb`](03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/02_NLP_Preprocesamiento_y_Analisis_Lexico.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/02_NLP_Preprocesamiento_y_Analisis_Lexico.ipynb): Limpieza HTML, contracciones, regex, tokenización, stop words, stemming (Porter, Snowball) y lematización (WordNet, spaCy).
+  - **Representaciones Tradicionales:** [`03a_NLP_Representaciones_Tradicionales_BoW_TFIDF.ipynb`](03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/03a_NLP_Representaciones_Tradicionales_BoW_TFIDF.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/02-formato-y-preprocesamiento/03a_NLP_Representaciones_Tradicionales_BoW_TFIDF.ipynb): Bag-of-Words binario y por frecuencia, n-gramas, TF-IDF y matrices documento-término.
+  - **Análisis Sintáctico:** [`04_NLP_Analisis_Sintactico_POS_spacy_nltk.ipynb`](03-nlp-procesamiento-texto/04-analisis-sintactico-semantico/04_NLP_Analisis_Sintactico_POS_spacy_nltk.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/04-analisis-sintactico-semantico/04_NLP_Analisis_Sintactico_POS_spacy_nltk.ipynb): POS tagging con NLTK/spaCy, shallow parsing (chunking) y árboles de dependencias.
+  - **Análisis Semántico y Pragmática:** [`05_NLP_Analisis_Semantico_Discurso_Pragmatica.ipynb`](03-nlp-procesamiento-texto/04-analisis-sintactico-semantico/05_NLP_Analisis_Semantico_Discurso_Pragmatica.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/04-analisis-sintactico-semantico/05_NLP_Analisis_Semantico_Discurso_Pragmatica.ipynb): Semántica léxica (WordNet, synsets, hiperónimos), desambiguación de sentidos léxicos (WSD, algoritmo de Lesk) y similitud semántica.
+  - **Modelos Recurrentes (Deep Learning):** [`Lenguaje_Natural_RNN_y_Bidireccional.ipynb`](03-nlp-procesamiento-texto/01-redes-recurrentes-rnn/Lenguaje_Natural_RNN_y_Bidireccional.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/01-redes-recurrentes-rnn/Lenguaje_Natural_RNN_y_Bidireccional.ipynb): Mitigación de *vanishing gradient* con **RNNs Bidireccionales, LSTMs y GRUs**.
+  - **Clasificación de Toxicidad:** [`DUIA_NLP_Clasificacion_Hate_Speech.ipynb`](03-nlp-procesamiento-texto/03-clasificacion-hate-speech/DUIA_NLP_Clasificacion_Hate_Speech.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/03-nlp-procesamiento-texto/03-clasificacion-hate-speech/DUIA_NLP_Clasificacion_Hate_Speech.ipynb): Clasificación de hate speech en comentarios de redes.
 
 ---
 
 ### 5. 🧬 Algoritmos Genéticos (Optimización Heurística)
 - **Directorio:** [`04-algoritmos-geneticos/`](04-algoritmos-geneticos/)
-- **Notebook interactivo:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CWlLIN9wVooWrRranssWSvkp6Qskrbl0?usp=sharing)
-- **Problema:** Resolución del clásico **Knapsack Problem (Problema de la Mochila)** maximizando el valor de utilidad de supervivencia bajo restricción estricta de peso máximo (15 kg).
-- **Componentes:** Operadores de selección por torneo/ruleta, crossover en un punto, mutación bit-flip adaptativa y tracking de curvas de convergencia.
+- **Notebooks:**
+  - [`TP4_Algoritmos_Geneticos_Mochila.ipynb`](04-algoritmos-geneticos/TP4_Algoritmos_Geneticos_Mochila.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/04-algoritmos-geneticos/TP4_Algoritmos_Geneticos_Mochila.ipynb): Resolución del problema de la mochila (*Knapsack Problem*) con biblioteca `geneticalgorithm`.
+  - [`Perspectiva_Practica_Algoritmos_Geneticos.ipynb`](04-algoritmos-geneticos/Perspectiva_Practica_Algoritmos_Geneticos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/benjamalegni/ML-luka/blob/main/04-algoritmos-geneticos/Perspectiva_Practica_Algoritmos_Geneticos.ipynb): Modelado de funciones de fitness y configuración de operadores de mutación/cruzamiento.
+- **Dataset:** `geneticos-mochila.csv` con 19 objetos de supervivencia y sus pesos/utilidades.
 
 ---
 
